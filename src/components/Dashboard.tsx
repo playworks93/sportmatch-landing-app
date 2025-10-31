@@ -21,16 +21,16 @@ const Dashboard = (props: DashboardProps) => {
           User Authentication & Onboarding
         </button>
         <button 
-          className={activeTab === 'sports_interests_profile_setup' ? 'active' : ''}
-          onClick={() => setActiveTab('sports_interests_profile_setup')}
+          className={activeTab === 'personalized_sports_profile_setup' ? 'active' : ''}
+          onClick={() => setActiveTab('personalized_sports_profile_setup')}
         >
-          Sports Interests Profile Setup
+          Personalized Sports Profile Setup
         </button>
         <button 
-          className={activeTab === 'discovery_&_matching_algorithm' ? 'active' : ''}
-          onClick={() => setActiveTab('discovery_&_matching_algorithm')}
+          className={activeTab === 'matchmaking_algorithm_based_on_interests' ? 'active' : ''}
+          onClick={() => setActiveTab('matchmaking_algorithm_based_on_interests')}
         >
-          Discovery & Matching Algorithm
+          Matchmaking Algorithm Based On Interests
         </button>
       </nav>
 
@@ -62,17 +62,17 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'sports_interests_profile_setup' && (
+        {activeTab === 'personalized_sports_profile_setup' && (
           <div className="tab-content">
-            <h2>Sports Interests Profile Setup</h2>
-            <p>Manage your sports interests profile setup here.</p>
+            <h2>Personalized Sports Profile Setup</h2>
+            <p>Manage your personalized sports profile setup here.</p>
           </div>
         )}
 
-        {activeTab === 'discovery_&_matching_algorithm' && (
+        {activeTab === 'matchmaking_algorithm_based_on_interests' && (
           <div className="tab-content">
-            <h2>Discovery & Matching Algorithm</h2>
-            <p>Manage your discovery & matching algorithm here.</p>
+            <h2>Matchmaking Algorithm based on Interests</h2>
+            <p>Manage your matchmaking algorithm based on interests here.</p>
           </div>
         )}
       </div>
