@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import AuthenticationComponent from './components/AuthenticationComponent'
+import AuthComponent from './components/AuthComponent'
 import ProfileSetupComponent from './components/ProfileSetupComponent'
-import MatchListComponent from './components/MatchListComponent'
+import MatchmakingComponent from './components/MatchmakingComponent'
 import ChatComponent from './components/ChatComponent'
-import EventComponent from './components/EventComponent'
+import EventPlannerComponent from './components/EventPlannerComponent'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>SportMatch</h1>
-          <p className="tagline">Connect through Passion</p>
+          <p className="tagline">Connect through your passion for sports</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -45,11 +45,11 @@ function App() {
           <h3>Key Features:</h3>
           <ul>
           <li>User Authentication & Onboarding</li>
-          <li>Sports Interests Profile Setup</li>
-          <li>Discovery & Matching Algorithm</li>
-          <li>In-App Messaging System</li>
-          <li>Event Creation & Group Activities</li>
-          <li>User Profiles & Photo Sharing</li>
+          <li>Personalized Sports Profile Setup</li>
+          <li>Matchmaking Algorithm based on Interests</li>
+          <li>In-App Messaging and Chat</li>
+          <li>Event and Activity Planning</li>
+          <li>Sports Group Formation</li>
           </ul>
         </div>
         <p>&copy; 2025 SportMatch. Built with React + TypeScript + Vite</p>
