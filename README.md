@@ -4,12 +4,12 @@ SportMatch - Built with React + TypeScript + Vite
 
 ## Features
 
-- User Authentication & Onboarding
-- Personalized Sports Profile Setup
-- Matchmaking Algorithm based on Interests
-- In-App Messaging and Chat
-- Event and Activity Planning
-- Sports Group Formation
+- User Profile Creation
+- Sports Interests Matching
+- Messaging System
+- Event & Activity Sharing
+- User Community Forums
+- Profile Verification & Safety Features
 
 ## Tech Stack
 
