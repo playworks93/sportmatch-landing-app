@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'user_registration_and_profile_creation' ? 'active' : ''}
-          onClick={() => setActiveTab('user_registration_and_profile_creation')}
+          className={activeTab === 'profile_creation_with_sports_preferences' ? 'active' : ''}
+          onClick={() => setActiveTab('profile_creation_with_sports_preferences')}
         >
-          User Registration And Profile Creation
+          Profile Creation With Sports Preferences
         </button>
         <button 
-          className={activeTab === 'sport_interest_matching' ? 'active' : ''}
-          onClick={() => setActiveTab('sport_interest_matching')}
+          className={activeTab === 'matchmaking_algorithm_based_on_interests' ? 'active' : ''}
+          onClick={() => setActiveTab('matchmaking_algorithm_based_on_interests')}
         >
-          Sport Interest Matching
+          Matchmaking Algorithm Based On Interests
         </button>
         <button 
-          className={activeTab === 'event_and_activity_scheduling' ? 'active' : ''}
-          onClick={() => setActiveTab('event_and_activity_scheduling')}
+          className={activeTab === 'event_planning_for_sports_activities' ? 'active' : ''}
+          onClick={() => setActiveTab('event_planning_for_sports_activities')}
         >
-          Event And Activity Scheduling
+          Event Planning For Sports Activities
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'user_registration_and_profile_creation' && (
+        {activeTab === 'profile_creation_with_sports_preferences' && (
           <div className="tab-content">
-            <h2>User Registration and Profile Creation</h2>
-            <p>Manage your user registration and profile creation here.</p>
+            <h2>Profile Creation with Sports Preferences</h2>
+            <p>Manage your profile creation with sports preferences here.</p>
           </div>
         )}
 
-        {activeTab === 'sport_interest_matching' && (
+        {activeTab === 'matchmaking_algorithm_based_on_interests' && (
           <div className="tab-content">
-            <h2>Sport Interest Matching</h2>
-            <p>Manage your sport interest matching here.</p>
+            <h2>Matchmaking Algorithm Based on Interests</h2>
+            <p>Manage your matchmaking algorithm based on interests here.</p>
           </div>
         )}
 
-        {activeTab === 'event_and_activity_scheduling' && (
+        {activeTab === 'event_planning_for_sports_activities' && (
           <div className="tab-content">
-            <h2>Event and Activity Scheduling</h2>
-            <p>Manage your event and activity scheduling here.</p>
+            <h2>Event Planning for Sports Activities</h2>
+            <p>Manage your event planning for sports activities here.</p>
           </div>
         )}
       </div>
