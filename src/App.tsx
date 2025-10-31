@@ -4,7 +4,7 @@ import Auth from './components/Auth'
 import UserProfile from './components/UserProfile'
 import MatchList from './components/MatchList'
 import ChatWindow from './components/ChatWindow'
-import EventScheduler from './components/EventScheduler'
+import EventCalendar from './components/EventCalendar'
 import Feed from './components/Feed'
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>SportMatch</h1>
-          <p className="tagline">Connect Through Your Passion for Sports</p>
+          <p className="tagline">Connect Through Sports</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>User Registration and Profile Creation</li>
-          <li>Sport Interest Matching</li>
-          <li>Event and Activity Scheduling</li>
-          <li>Messaging and Chat Functionality</li>
-          <li>User Feed with Sports-related Content</li>
-          <li>Location-based Search for Nearby Users</li>
+          <li>Profile Creation with Sports Preferences</li>
+          <li>Matchmaking Algorithm Based on Interests</li>
+          <li>Event Planning for Sports Activities</li>
+          <li>Chat and Messaging Functionality</li>
+          <li>User Feed for Sports-Related Content</li>
+          <li>Safety and Verification Features</li>
           </ul>
         </div>
         <p>&copy; 2025 SportMatch. Built with React + TypeScript + Vite</p>
