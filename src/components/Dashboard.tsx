@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'user_profile_creation' ? 'active' : ''}
-          onClick={() => setActiveTab('user_profile_creation')}
+          className={activeTab === 'user_registration_and_profile_creation' ? 'active' : ''}
+          onClick={() => setActiveTab('user_registration_and_profile_creation')}
         >
-          User Profile Creation
+          User Registration And Profile Creation
         </button>
         <button 
-          className={activeTab === 'interest_based_matching' ? 'active' : ''}
-          onClick={() => setActiveTab('interest_based_matching')}
+          className={activeTab === 'sport_interest_matching' ? 'active' : ''}
+          onClick={() => setActiveTab('sport_interest_matching')}
         >
-          Interest Based Matching
+          Sport Interest Matching
         </button>
         <button 
-          className={activeTab === 'in_app_messaging' ? 'active' : ''}
-          onClick={() => setActiveTab('in_app_messaging')}
+          className={activeTab === 'event_and_activity_scheduling' ? 'active' : ''}
+          onClick={() => setActiveTab('event_and_activity_scheduling')}
         >
-          In App Messaging
+          Event And Activity Scheduling
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'user_profile_creation' && (
+        {activeTab === 'user_registration_and_profile_creation' && (
           <div className="tab-content">
-            <h2>User Profile Creation</h2>
-            <p>Manage your user profile creation here.</p>
+            <h2>User Registration and Profile Creation</h2>
+            <p>Manage your user registration and profile creation here.</p>
           </div>
         )}
 
-        {activeTab === 'interest_based_matching' && (
+        {activeTab === 'sport_interest_matching' && (
           <div className="tab-content">
-            <h2>Interest-Based Matching</h2>
-            <p>Manage your interest based matching here.</p>
+            <h2>Sport Interest Matching</h2>
+            <p>Manage your sport interest matching here.</p>
           </div>
         )}
 
-        {activeTab === 'in_app_messaging' && (
+        {activeTab === 'event_and_activity_scheduling' && (
           <div className="tab-content">
-            <h2>In-App Messaging</h2>
-            <p>Manage your in app messaging here.</p>
+            <h2>Event and Activity Scheduling</h2>
+            <p>Manage your event and activity scheduling here.</p>
           </div>
         )}
       </div>
