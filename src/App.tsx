@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import ProfileComponent from './components/ProfileComponent'
-import MatchListComponent from './components/MatchListComponent'
-import MessageComponent from './components/MessageComponent'
-import ActivityFeedComponent from './components/ActivityFeedComponent'
-import EventPlannerComponent from './components/EventPlannerComponent'
+import UserProfile from './components/UserProfile'
+import MatchList from './components/MatchList'
+import ChatWindow from './components/ChatWindow'
+import EventScheduler from './components/EventScheduler'
+import Feed from './components/Feed'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>SportMatch</h1>
-          <p className="tagline">Connect through your love for sports!</p>
+          <p className="tagline">Connect Through Your Passion for Sports</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>User Profile Creation</li>
-          <li>Interest-Based Matching</li>
-          <li>In-App Messaging</li>
-          <li>Event Planning and Group Activities</li>
-          <li>Sports Activity Feed</li>
-          <li>User Verification</li>
+          <li>User Registration and Profile Creation</li>
+          <li>Sport Interest Matching</li>
+          <li>Event and Activity Scheduling</li>
+          <li>Messaging and Chat Functionality</li>
+          <li>User Feed with Sports-related Content</li>
+          <li>Location-based Search for Nearby Users</li>
           </ul>
         </div>
         <p>&copy; 2025 SportMatch. Built with React + TypeScript + Vite</p>
