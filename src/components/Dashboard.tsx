@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'profile_creation_with_sports_preferences' ? 'active' : ''}
-          onClick={() => setActiveTab('profile_creation_with_sports_preferences')}
+          className={activeTab === 'user_authentication_&_onboarding' ? 'active' : ''}
+          onClick={() => setActiveTab('user_authentication_&_onboarding')}
         >
-          Profile Creation With Sports Preferences
+          User Authentication & Onboarding
         </button>
         <button 
-          className={activeTab === 'matchmaking_algorithm_based_on_interests' ? 'active' : ''}
-          onClick={() => setActiveTab('matchmaking_algorithm_based_on_interests')}
+          className={activeTab === 'sports_interests_profile_setup' ? 'active' : ''}
+          onClick={() => setActiveTab('sports_interests_profile_setup')}
         >
-          Matchmaking Algorithm Based On Interests
+          Sports Interests Profile Setup
         </button>
         <button 
-          className={activeTab === 'event_planning_for_sports_activities' ? 'active' : ''}
-          onClick={() => setActiveTab('event_planning_for_sports_activities')}
+          className={activeTab === 'discovery_&_matching_algorithm' ? 'active' : ''}
+          onClick={() => setActiveTab('discovery_&_matching_algorithm')}
         >
-          Event Planning For Sports Activities
+          Discovery & Matching Algorithm
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'profile_creation_with_sports_preferences' && (
+        {activeTab === 'user_authentication_&_onboarding' && (
           <div className="tab-content">
-            <h2>Profile Creation with Sports Preferences</h2>
-            <p>Manage your profile creation with sports preferences here.</p>
+            <h2>User Authentication & Onboarding</h2>
+            <p>Manage your user authentication & onboarding here.</p>
           </div>
         )}
 
-        {activeTab === 'matchmaking_algorithm_based_on_interests' && (
+        {activeTab === 'sports_interests_profile_setup' && (
           <div className="tab-content">
-            <h2>Matchmaking Algorithm Based on Interests</h2>
-            <p>Manage your matchmaking algorithm based on interests here.</p>
+            <h2>Sports Interests Profile Setup</h2>
+            <p>Manage your sports interests profile setup here.</p>
           </div>
         )}
 
-        {activeTab === 'event_planning_for_sports_activities' && (
+        {activeTab === 'discovery_&_matching_algorithm' && (
           <div className="tab-content">
-            <h2>Event Planning for Sports Activities</h2>
-            <p>Manage your event planning for sports activities here.</p>
+            <h2>Discovery & Matching Algorithm</h2>
+            <p>Manage your discovery & matching algorithm here.</p>
           </div>
         )}
       </div>
